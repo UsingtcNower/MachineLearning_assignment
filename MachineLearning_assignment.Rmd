@@ -1,0 +1,25 @@
+---
+title: "MachineLearning_Assignment"
+author: "UsingtcNower"
+date: "2015年3月22日"
+output: html_document
+---
+
+#Introduction
+In this report, I will use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants. They were asked to perform barbell lifts correctly and incorrectly in 5 different ways. And the goal of this report is to predict the manner in which they did the exercise.
+
+#Process
+Load the data
+```{r}
+download.file("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv", destfile="pml-training.csv", method="curl")
+download.file("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv", destfile="pml-testing.csv", method="curl")
+training <- read.csv("pml-training.csv")
+testing <- read.csv("pml-testing.csv")
+head(training)
+colnames(training)
+head(testing)
+colnames(testing)
+```
+Clean the dataset
+```{r}
+```
